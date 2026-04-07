@@ -1,3 +1,3 @@
-# Welcome to your Lovable project
+# Aurélia Hair Studio
 
 TODO: Document your project here

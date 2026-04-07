@@ -32,7 +32,7 @@ const Index = () => {
         <motion.img
           src={aureliaLogo}
           alt="Aurélia Hair"
-          className="mb-2 h-16 w-auto"
+          className="mb-2 h-24 w-auto"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
