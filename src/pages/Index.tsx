@@ -33,6 +33,7 @@ const Index = () => {
           src={aureliaLogo}
           alt="Aurélia Hair"
           className="mb-2 h-24 w-auto"
+          style={{ filter: "sepia(1) saturate(8) hue-rotate(310deg) brightness(0.32)", mixBlendMode: "multiply" }}
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
