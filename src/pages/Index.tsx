@@ -29,15 +29,17 @@ const Index = () => {
       {/* Content */}
       <div className="relative -mt-20 flex flex-col items-center px-6 pb-16">
         {/* Logo */}
-        <motion.img
-          src={aureliaLogo}
-          alt="Aurélia Hair"
-          className="mb-2 h-24 w-auto"
-          style={{ filter: "sepia(1) saturate(8) hue-rotate(310deg) brightness(0.32)", mixBlendMode: "multiply" }}
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
-        />
+        <div className="mb-2 overflow-hidden" style={{ height: '8rem' }}>
+          <motion.img
+            src={aureliaLogo}
+            alt="Aurélia Hair"
+            className="h-52 w-auto"
+            style={{ marginTop: '-5rem', filter: "sepia(1) saturate(8) hue-rotate(310deg) brightness(0.32)", mixBlendMode: "multiply" }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+          />
+        </div>
 
         <motion.p
           className="font-display text-lg italic tracking-wide text-muted-foreground"
