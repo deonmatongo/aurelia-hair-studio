@@ -269,7 +269,7 @@ export default function Shop() {
         >
           <ShoppingBag className="h-5 w-5" />
           {cartCount > 0 && (
-            <span className="absolute -top-2 -right-2 flex h-5 w-5 items-center justify-center rounded-full bg-rosegold text-[10px] font-bold text-white">
+            <span className="absolute -top-2 -right-2 flex h-5 w-5 items-center justify-center rounded-full bg-burgundy text-[10px] font-bold text-white">
               {cartCount}
             </span>
           )}
@@ -304,8 +304,8 @@ export default function Shop() {
             onClick={() => setActiveCategory(cat)}
             className={`flex-shrink-0 rounded-full px-5 py-2 font-body text-xs tracking-widest uppercase transition-all duration-200 ${
               activeCategory === cat
-                ? "bg-rosegold text-white"
-                : "border border-border bg-cream text-muted-foreground hover:border-rosegold"
+                ? "bg-burgundy text-white"
+                : "border border-border bg-cream text-muted-foreground hover:border-burgundy"
             }`}
           >
             {cat}
@@ -336,7 +336,7 @@ export default function Shop() {
                 </div>
 
                 {/* Info */}
-                <p className="mb-1 font-body text-[10px] tracking-[0.25em] uppercase text-rosegold">
+                <p className="mb-1 font-body text-[10px] tracking-[0.25em] uppercase text-burgundy">
                   {product.category}
                 </p>
                 <h3 className="font-display text-xl font-medium">{product.name}</h3>
@@ -354,8 +354,8 @@ export default function Shop() {
                       }
                       className={`rounded-full px-3 py-1 font-body text-[10px] tracking-wider uppercase transition-all ${
                         variantIdx === idx
-                          ? "bg-rosegold text-white"
-                          : "border border-border bg-background text-muted-foreground hover:border-rosegold"
+                          ? "bg-burgundy text-white"
+                          : "border border-border bg-background text-muted-foreground hover:border-burgundy"
                       }`}
                     >
                       {v.label}
@@ -370,7 +370,7 @@ export default function Shop() {
                   </span>
                   <button
                     onClick={() => addToCart(product)}
-                    className="flex items-center gap-2 rounded-full bg-rosegold px-5 py-2 font-body text-xs tracking-widest uppercase text-white transition-all hover:opacity-80 active:scale-95"
+                    className="flex items-center gap-2 rounded-full bg-burgundy px-5 py-2 font-body text-xs tracking-widest uppercase text-white transition-all hover:opacity-80 active:scale-95"
                   >
                     <Plus className="h-3.5 w-3.5" />
                     Add
@@ -420,7 +420,7 @@ export default function Shop() {
               {/* Drawer header */}
               <div className="flex items-center justify-between border-b border-border px-6 py-5">
                 <div className="flex items-center gap-2">
-                  <ShoppingBag className="h-5 w-5 text-rosegold" />
+                  <ShoppingBag className="h-5 w-5 text-burgundy" />
                   <h2 className="font-display text-xl">Your Order</h2>
                 </div>
                 <button

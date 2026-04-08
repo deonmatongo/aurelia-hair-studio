@@ -6,7 +6,7 @@ import LinkButton from "@/components/LinkButton";
 
 const links = [
   { href: "/shop", label: "Shop Hair", icon: <ShoppingBag className="h-4 w-4" /> },
-  { href: "#", label: "Instagram", icon: <Instagram className="h-4 w-4" /> },
+  { href: "https://www.instagram.com/aurelia.luxury.hair", label: "Instagram", icon: <Instagram className="h-4 w-4" /> },
   { href: "#", label: "TikTok", icon: <Star className="h-4 w-4" /> },
   { href: "#", label: "WhatsApp", icon: <MessageCircle className="h-4 w-4" /> },
 ];
